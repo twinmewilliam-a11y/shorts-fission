@@ -42,6 +42,10 @@ class ScraplingDownloader:
         
         Returns:
             页面 HTML 内容
+            
+        Note:
+            Scrapling 的 page 对象是 Element 类型，获取完整 HTML 用 html_content
+            而不是 html（html 返回的是元素片段）
         """
         if not SCRAPLING_AVAILABLE:
             logger.warning("Scrapling 不可用")
@@ -57,7 +61,8 @@ class ScraplingDownloader:
                 logger.info(f"使用 HTTP 模式抓取: {url}")
                 page = Fetcher.get(url, impersonate='chrome')
             
-            return page.html
+            # 使用 html_content 获取完整页面 HTML（Scrapling 设计：page 是 Element 类型）
+            return page.html_content
             
         except Exception as e:
             logger.error(f"Scrapling 抓取失败: {e}")
@@ -232,13 +237,17 @@ class ScraplingSession:
             self.session = None
     
     def fetch(self, url: str) -> Optional[str]:
-        """使用 Session 抓取页面"""
+        """使用 Session 抓取页面
+        
+        Note:
+            使用 html_content 获取完整页面 HTML（Scrapling 设计：page 是 Element 类型）
+        """
         if not SCRAPLING_AVAILABLE:
             return None
         
         if self.session:
             page = self.session.fetch(url)
-            return page.html
+            return page.html_content
         else:
             page = StealthyFetcher.fetch(url, headless=self.headless)
-            return page.html
+            return page.html_content
