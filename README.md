@@ -231,12 +231,12 @@ pending → downloading → downloaded → processing → completed
 
 **模式 1：portrait_crop（默认）**
 - 缩放：与背景层同比例
-- 裁剪：上下裁剪，剩余 55-65%
+- 裁剪：上下裁剪，剩余 60-70%
 - 位置：居中
 
 **模式 2：landscape（横屏）**
 - 宽度：100-120%
-- 屏幕占比：55-65%
+- 屏幕占比：60-70%
 - 位置：居中
 
 ### 文字层

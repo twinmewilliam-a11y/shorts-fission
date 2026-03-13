@@ -218,11 +218,11 @@ class PIPVariantEngineV4:
             # 适用于：源视频本身就是横屏（16:9）
             # 如果源视频是竖屏，会自动 fallback 到 portrait_crop 效果
             
-            # 缩放：让中间层在竖屏背景中居中，高度占屏幕 55-65%
+            # 缩放：让中间层在竖屏背景中居中，高度占屏幕 60-70%
             # 横屏视频（如 1920x1080）缩放后：
             # - 高度 = 原高 * fg_height_ratio
             # - 宽度 = 按比例自动计算（-2）
-            fg_height_ratio = random.uniform(0.55, 0.65)
+            fg_height_ratio = random.uniform(0.60, 0.70)
             fg_filters.append(f"scale=-2:ih*{fg_height_ratio:.2f}")
             
             params['fg_height_ratio'] = fg_height_ratio
@@ -245,8 +245,8 @@ class PIPVariantEngineV4:
             fg_filters.append(f"eq=brightness={fg_brightness:.2f}")
             params['fg_brightness'] = fg_brightness
 
-            # 3. 裁剪上下边缘，剩余 55-65%
-            remaining = random.uniform(0.55, 0.65)  # 剩余 55-65%
+            # 3. 裁剪上下边缘，剩余 60-70%
+            remaining = random.uniform(0.60, 0.70)  # 剩余 60-70%
             total_crop = 1.0 - remaining
             # 上下分配：顶部占 40-60%，底部占剩余
             top_ratio = random.uniform(0.40, 0.60)
