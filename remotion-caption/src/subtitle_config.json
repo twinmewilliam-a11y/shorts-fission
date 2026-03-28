@@ -1,0 +1,1928 @@
+{
+  "config": {
+    "template": "line_focus",
+    "position": "top_center",
+    "fontSize": 56,
+    "videoWidth": 1080,
+    "videoHeight": 1920
+  },
+  "document": {
+    "segments": [
+      {
+        "lines": [
+          {
+            "id": 0,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 1,
+            "tags": []
+          },
+          {
+            "id": 2,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 3,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 4,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 5,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 6,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 7,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 8,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 9,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 10,
+            "tags": []
+          },
+          {
+            "id": 11,
+            "tags": []
+          },
+          {
+            "id": 12,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 13,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 14,
+            "tags": []
+          },
+          {
+            "id": 15,
+            "tags": []
+          },
+          {
+            "id": 16,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 17,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 18,
+            "tags": []
+          },
+          {
+            "id": 19,
+            "tags": []
+          },
+          {
+            "id": 20,
+            "tags": []
+          },
+          {
+            "id": 21,
+            "tags": []
+          },
+          {
+            "id": 22,
+            "tags": []
+          },
+          {
+            "id": 23,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      }
+    ]
+  },
+  "lines": [
+    {
+      "id": 0,
+      "text": "Yo siempre digo que",
+      "start": 0.398,
+      "end": 1.24,
+      "words": [
+        {
+          "text": "Yo",
+          "start": 0.398,
+          "end": 0.538,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "siempre",
+          "start": 0.598,
+          "end": 0.879,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "digo",
+          "start": 0.939,
+          "end": 1.119,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "que",
+          "start": 1.159,
+          "end": 1.24,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 235,
+        "y": 80,
+        "width": 610,
+        "height": 60
+      }
+    },
+    {
+      "id": 1,
+      "text": "Araújo fue una",
+      "start": 1.28,
+      "end": 2.121,
+      "words": [
+        {
+          "text": "Araújo",
+          "start": 1.28,
+          "end": 1.881,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "fue",
+          "start": 1.901,
+          "end": 1.981,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "una",
+          "start": 2.021,
+          "end": 2.121,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 310,
+        "y": 80,
+        "width": 460,
+        "height": 60
+      }
+    },
+    {
+      "id": 2,
+      "text": "persona",
+      "start": 2.181,
+      "end": 2.802,
+      "words": [
+        {
+          "text": "persona",
+          "start": 2.181,
+          "end": 2.802,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word",
+            "last-word-in-line",
+            "single-word-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 415,
+        "y": 80,
+        "width": 250,
+        "height": 60
+      }
+    },
+    {
+      "id": 3,
+      "text": "muy especial para",
+      "start": 3.443,
+      "end": 4.225,
+      "words": [
+        {
+          "text": "muy",
+          "start": 3.443,
+          "end": 3.564,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "especial",
+          "start": 3.604,
+          "end": 4.004,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "para",
+          "start": 4.084,
+          "end": 4.225,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 265,
+        "y": 80,
+        "width": 550,
+        "height": 60
+      }
+    },
+    {
+      "id": 4,
+      "text": "mí, desde que llegué",
+      "start": 4.285,
+      "end": 5.226,
+      "words": [
+        {
+          "text": "mí,",
+          "start": 4.285,
+          "end": 4.425,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "desde",
+          "start": 4.605,
+          "end": 4.786,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "que",
+          "start": 4.826,
+          "end": 4.906,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "llegué",
+          "start": 4.926,
+          "end": 5.226,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 220,
+        "y": 80,
+        "width": 640,
+        "height": 60
+      }
+    },
+    {
+      "id": 5,
+      "text": "tanto el cuanto",
+      "start": 5.948,
+      "end": 7.43,
+      "words": [
+        {
+          "text": "tanto",
+          "start": 5.948,
+          "end": 6.188,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "el",
+          "start": 6.288,
+          "end": 6.909,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "cuanto",
+          "start": 7.19,
+          "end": 7.43,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 295,
+        "y": 80,
+        "width": 490,
+        "height": 60
+      }
+    },
+    {
+      "id": 6,
+      "text": "ansu,",
+      "start": 7.51,
+      "end": 7.811,
+      "words": [
+        {
+          "text": "ansu,",
+          "start": 7.51,
+          "end": 7.811,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word",
+            "last-word-in-line",
+            "single-word-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 445,
+        "y": 80,
+        "width": 190,
+        "height": 60
+      }
+    },
+    {
+      "id": 7,
+      "text": "fueron las dos",
+      "start": 9.093,
+      "end": 9.754,
+      "words": [
+        {
+          "text": "fueron",
+          "start": 9.093,
+          "end": 9.273,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "las",
+          "start": 9.353,
+          "end": 9.534,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "dos",
+          "start": 9.634,
+          "end": 9.754,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 310,
+        "y": 80,
+        "width": 460,
+        "height": 60
+      }
+    },
+    {
+      "id": 8,
+      "text": "personas que de cara",
+      "start": 9.854,
+      "end": 11.016,
+      "words": [
+        {
+          "text": "personas",
+          "start": 9.854,
+          "end": 10.175,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "que",
+          "start": 10.215,
+          "end": 10.315,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "de",
+          "start": 10.375,
+          "end": 10.455,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "cara",
+          "start": 10.515,
+          "end": 11.016,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 220,
+        "y": 80,
+        "width": 640,
+        "height": 60
+      }
+    },
+    {
+      "id": 9,
+      "text": "me ofreceron una",
+      "start": 11.858,
+      "end": 12.579,
+      "words": [
+        {
+          "text": "me",
+          "start": 11.858,
+          "end": 11.938,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "ofreceron",
+          "start": 11.958,
+          "end": 12.419,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "una",
+          "start": 12.439,
+          "end": 12.579,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 280,
+        "y": 80,
+        "width": 520,
+        "height": 60
+      }
+    },
+    {
+      "id": 10,
+      "text": "ayuda a lo que",
+      "start": 12.639,
+      "end": 13.661,
+      "words": [
+        {
+          "text": "ayuda",
+          "start": 12.639,
+          "end": 13.12,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "a",
+          "start": 13.14,
+          "end": 13.16,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "lo",
+          "start": 13.46,
+          "end": 13.521,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "que",
+          "start": 13.561,
+          "end": 13.661,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 310,
+        "y": 80,
+        "width": 460,
+        "height": 60
+      }
+    },
+    {
+      "id": 11,
+      "text": "necesitaba dentro y",
+      "start": 13.721,
+      "end": 14.683,
+      "words": [
+        {
+          "text": "necesitaba",
+          "start": 13.721,
+          "end": 14.302,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "dentro",
+          "start": 14.382,
+          "end": 14.622,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "y",
+          "start": 14.642,
+          "end": 14.683,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 235,
+        "y": 80,
+        "width": 610,
+        "height": 60
+      }
+    },
+    {
+      "id": 12,
+      "text": "fuera del club.",
+      "start": 14.743,
+      "end": 15.404,
+      "words": [
+        {
+          "text": "fuera",
+          "start": 14.743,
+          "end": 14.923,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "del",
+          "start": 14.983,
+          "end": 15.063,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "club.",
+          "start": 15.163,
+          "end": 15.404,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 295,
+        "y": 80,
+        "width": 490,
+        "height": 60
+      }
+    },
+    {
+      "id": 13,
+      "text": "Desde que llegué se",
+      "start": 16.285,
+      "end": 17.307,
+      "words": [
+        {
+          "text": "Desde",
+          "start": 16.285,
+          "end": 16.486,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "que",
+          "start": 16.526,
+          "end": 16.606,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "llegué",
+          "start": 16.626,
+          "end": 17.107,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "se",
+          "start": 17.227,
+          "end": 17.307,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 235,
+        "y": 80,
+        "width": 610,
+        "height": 60
+      }
+    },
+    {
+      "id": 14,
+      "text": "acercaron muchísimo",
+      "start": 17.347,
+      "end": 18.229,
+      "words": [
+        {
+          "text": "acercaron",
+          "start": 17.347,
+          "end": 17.768,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "muchísimo",
+          "start": 17.808,
+          "end": 18.229,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 235,
+        "y": 80,
+        "width": 610,
+        "height": 60
+      }
+    },
+    {
+      "id": 15,
+      "text": "a mí y intentaron",
+      "start": 18.249,
+      "end": 19.371,
+      "words": [
+        {
+          "text": "a",
+          "start": 18.249,
+          "end": 18.269,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "mí",
+          "start": 18.349,
+          "end": 18.589,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "y",
+          "start": 18.649,
+          "end": 18.89,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "intentaron",
+          "start": 18.97,
+          "end": 19.371,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 265,
+        "y": 80,
+        "width": 550,
+        "height": 60
+      }
+    },
+    {
+      "id": 16,
+      "text": "ayudarme",
+      "start": 19.431,
+      "end": 19.931,
+      "words": [
+        {
+          "text": "ayudarme",
+          "start": 19.431,
+          "end": 19.931,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word",
+            "last-word-in-line",
+            "single-word-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 400,
+        "y": 80,
+        "width": 280,
+        "height": 60
+      }
+    },
+    {
+      "id": 17,
+      "text": "para que me",
+      "start": 20.713,
+      "end": 21.674,
+      "words": [
+        {
+          "text": "para",
+          "start": 20.713,
+          "end": 21.394,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "que",
+          "start": 21.434,
+          "end": 21.614,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "me",
+          "start": 21.634,
+          "end": 21.674,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 355,
+        "y": 80,
+        "width": 370,
+        "height": 60
+      }
+    },
+    {
+      "id": 18,
+      "text": "adaptación en el",
+      "start": 21.714,
+      "end": 22.416,
+      "words": [
+        {
+          "text": "adaptación",
+          "start": 21.714,
+          "end": 22.175,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "en",
+          "start": 22.235,
+          "end": 22.295,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "el",
+          "start": 22.336,
+          "end": 22.416,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 280,
+        "y": 80,
+        "width": 520,
+        "height": 60
+      }
+    },
+    {
+      "id": 19,
+      "text": "club hubiera sido",
+      "start": 22.536,
+      "end": 23.918,
+      "words": [
+        {
+          "text": "club",
+          "start": 22.536,
+          "end": 23.478,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "hubiera",
+          "start": 23.498,
+          "end": 23.718,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "sido",
+          "start": 23.758,
+          "end": 23.918,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 265,
+        "y": 80,
+        "width": 550,
+        "height": 60
+      }
+    },
+    {
+      "id": 20,
+      "text": "más fácil y la",
+      "start": 23.978,
+      "end": 24.539,
+      "words": [
+        {
+          "text": "más",
+          "start": 23.978,
+          "end": 24.079,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "fácil",
+          "start": 24.139,
+          "end": 24.439,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "y",
+          "start": 24.459,
+          "end": 24.479,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "la",
+          "start": 24.499,
+          "end": 24.539,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 310,
+        "y": 80,
+        "width": 460,
+        "height": 60
+      }
+    },
+    {
+      "id": 21,
+      "text": "verdad, soy muy",
+      "start": 24.68,
+      "end": 25.541,
+      "words": [
+        {
+          "text": "verdad,",
+          "start": 24.68,
+          "end": 24.98,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "soy",
+          "start": 25.0,
+          "end": 25.06,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "muy",
+          "start": 25.441,
+          "end": 25.541,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 295,
+        "y": 80,
+        "width": 490,
+        "height": 60
+      }
+    },
+    {
+      "id": 22,
+      "text": "agradecido a estos",
+      "start": 25.601,
+      "end": 26.803,
+      "words": [
+        {
+          "text": "agradecido",
+          "start": 25.601,
+          "end": 26.062,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word"
+          ]
+        },
+        {
+          "text": "a",
+          "start": 26.082,
+          "end": 26.523,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "estos",
+          "start": 26.583,
+          "end": 26.803,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 250,
+        "y": 80,
+        "width": 580,
+        "height": 60
+      }
+    },
+    {
+      "id": 23,
+      "text": "dos.",
+      "start": 26.903,
+      "end": 27.024,
+      "words": [
+        {
+          "text": "dos.",
+          "start": 26.903,
+          "end": 27.024,
+          "confidence": 1.0,
+          "tags": [
+            "first-word-in-line",
+            "word",
+            "last-word-in-line",
+            "single-word-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 460,
+        "y": 80,
+        "width": 160,
+        "height": 60
+      }
+    }
+  ],
+  "words": [
+    {
+      "text": "Yo",
+      "start": 0.398,
+      "end": 0.538,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "siempre",
+      "start": 0.598,
+      "end": 0.879,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "digo",
+      "start": 0.939,
+      "end": 1.119,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "que",
+      "start": 1.159,
+      "end": 1.24,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "Araújo",
+      "start": 1.28,
+      "end": 1.881,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "fue",
+      "start": 1.901,
+      "end": 1.981,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "una",
+      "start": 2.021,
+      "end": 2.121,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "persona",
+      "start": 2.181,
+      "end": 2.802,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word",
+        "last-word-in-line",
+        "single-word-line"
+      ]
+    },
+    {
+      "text": "muy",
+      "start": 3.443,
+      "end": 3.564,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "especial",
+      "start": 3.604,
+      "end": 4.004,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "para",
+      "start": 4.084,
+      "end": 4.225,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "mí,",
+      "start": 4.285,
+      "end": 4.425,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "desde",
+      "start": 4.605,
+      "end": 4.786,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "que",
+      "start": 4.826,
+      "end": 4.906,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "llegué",
+      "start": 4.926,
+      "end": 5.226,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "tanto",
+      "start": 5.948,
+      "end": 6.188,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "el",
+      "start": 6.288,
+      "end": 6.909,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "cuanto",
+      "start": 7.19,
+      "end": 7.43,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "ansu,",
+      "start": 7.51,
+      "end": 7.811,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word",
+        "last-word-in-line",
+        "single-word-line"
+      ]
+    },
+    {
+      "text": "fueron",
+      "start": 9.093,
+      "end": 9.273,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "las",
+      "start": 9.353,
+      "end": 9.534,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "dos",
+      "start": 9.634,
+      "end": 9.754,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "personas",
+      "start": 9.854,
+      "end": 10.175,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "que",
+      "start": 10.215,
+      "end": 10.315,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "de",
+      "start": 10.375,
+      "end": 10.455,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "cara",
+      "start": 10.515,
+      "end": 11.016,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "me",
+      "start": 11.858,
+      "end": 11.938,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "ofreceron",
+      "start": 11.958,
+      "end": 12.419,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "una",
+      "start": 12.439,
+      "end": 12.579,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "ayuda",
+      "start": 12.639,
+      "end": 13.12,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "a",
+      "start": 13.14,
+      "end": 13.16,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "lo",
+      "start": 13.46,
+      "end": 13.521,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "que",
+      "start": 13.561,
+      "end": 13.661,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "necesitaba",
+      "start": 13.721,
+      "end": 14.302,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "dentro",
+      "start": 14.382,
+      "end": 14.622,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "y",
+      "start": 14.642,
+      "end": 14.683,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "fuera",
+      "start": 14.743,
+      "end": 14.923,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "del",
+      "start": 14.983,
+      "end": 15.063,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "club.",
+      "start": 15.163,
+      "end": 15.404,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "Desde",
+      "start": 16.285,
+      "end": 16.486,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "que",
+      "start": 16.526,
+      "end": 16.606,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "llegué",
+      "start": 16.626,
+      "end": 17.107,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "se",
+      "start": 17.227,
+      "end": 17.307,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "acercaron",
+      "start": 17.347,
+      "end": 17.768,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "muchísimo",
+      "start": 17.808,
+      "end": 18.229,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "a",
+      "start": 18.249,
+      "end": 18.269,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "mí",
+      "start": 18.349,
+      "end": 18.589,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "y",
+      "start": 18.649,
+      "end": 18.89,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "intentaron",
+      "start": 18.97,
+      "end": 19.371,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "ayudarme",
+      "start": 19.431,
+      "end": 19.931,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word",
+        "last-word-in-line",
+        "single-word-line"
+      ]
+    },
+    {
+      "text": "para",
+      "start": 20.713,
+      "end": 21.394,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "que",
+      "start": 21.434,
+      "end": 21.614,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "me",
+      "start": 21.634,
+      "end": 21.674,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "adaptación",
+      "start": 21.714,
+      "end": 22.175,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "en",
+      "start": 22.235,
+      "end": 22.295,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "el",
+      "start": 22.336,
+      "end": 22.416,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "club",
+      "start": 22.536,
+      "end": 23.478,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "hubiera",
+      "start": 23.498,
+      "end": 23.718,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "sido",
+      "start": 23.758,
+      "end": 23.918,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "más",
+      "start": 23.978,
+      "end": 24.079,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "fácil",
+      "start": 24.139,
+      "end": 24.439,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "y",
+      "start": 24.459,
+      "end": 24.479,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "la",
+      "start": 24.499,
+      "end": 24.539,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "verdad,",
+      "start": 24.68,
+      "end": 24.98,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "soy",
+      "start": 25.0,
+      "end": 25.06,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "muy",
+      "start": 25.441,
+      "end": 25.541,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "agradecido",
+      "start": 25.601,
+      "end": 26.062,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word"
+      ]
+    },
+    {
+      "text": "a",
+      "start": 26.082,
+      "end": 26.523,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "estos",
+      "start": 26.583,
+      "end": 26.803,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "dos.",
+      "start": 26.903,
+      "end": 27.024,
+      "confidence": 1.0,
+      "tags": [
+        "first-word-in-line",
+        "word",
+        "last-word-in-line",
+        "single-word-line"
+      ]
+    }
+  ]
+}

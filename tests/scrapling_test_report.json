@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-03-09T00:37:27.643878",
+  "passed": 13,
+  "total": 13,
+  "results": [
+    {
+      "test": "Scrapling 模块可用性",
+      "passed": true,
+      "message": "Fetcher ✅\nStealthyFetcher ✅\nSelector ✅",
+      "timestamp": "2026-03-09T00:37:19.158100"
+    },
+    {
+      "test": "ScraplingDownloader 导入",
+      "passed": true,
+      "message": "ScraplingDownloader ✅\nScraplingSession ✅\nSCRAPLING_AVAILABLE = True",
+      "timestamp": "2026-03-09T00:37:19.204057"
+    },
+    {
+      "test": "yt-dlp 可用性",
+      "passed": true,
+      "message": "版本: 2026.03.03",
+      "timestamp": "2026-03-09T00:37:19.492028"
+    },
+    {
+      "test": "requirements.txt 已更新",
+      "passed": true,
+      "message": "scrapling 已添加到依赖",
+      "timestamp": "2026-03-09T00:37:19.492111"
+    },
+    {
+      "test": "HTTP 抓取功能",
+      "passed": true,
+      "message": "抓取到 10 条数据\n示例: “The world as we have created it is a process of o...",
+      "timestamp": "2026-03-09T00:37:20.297401"
+    },
+    {
+      "test": "隐身模式抓取",
+      "passed": true,
+      "message": "抓取到 10 条数据\n隐身模式正常工作",
+      "timestamp": "2026-03-09T00:37:22.150723"
+    },
+    {
+      "test": "YouTube 页面抓取",
+      "passed": true,
+      "message": "标题: Rick Astley - Never Gonna Give You Up (Official Video) (4K R...",
+      "timestamp": "2026-03-09T00:37:22.899579"
+    },
+    {
+      "test": "TikTok 页面抓取",
+      "passed": true,
+      "message": "获取到 1114 字符\nTikTok 页面可访问",
+      "timestamp": "2026-03-09T00:37:22.945666"
+    },
+    {
+      "test": "ScraplingDownloader HTTP 模式",
+      "passed": true,
+      "message": "获取视频信息成功\n标题: Rick Astley - Never Gonna Give You Up (Official Vi...",
+      "timestamp": "2026-03-09T00:37:23.805603"
+    },
+    {
+      "test": "ScraplingDownloader 隐身模式",
+      "passed": true,
+      "message": "隐身模式获取成功\n标题: Rick Astley - Never Gonna Give You Up (Official Vi...",
+      "timestamp": "2026-03-09T00:37:26.386059"
+    },
+    {
+      "test": "Session 管理器",
+      "passed": true,
+      "message": "ScraplingSession 创建成功\n支持上下文管理",
+      "timestamp": "2026-03-09T00:37:26.386089"
+    },
+    {
+      "test": "Celery 任务导入",
+      "passed": true,
+      "message": "celery_app ✅\ndownload_video_task ✅\ngenerate_variants_task ✅\nscrapling_downloader ✅",
+      "timestamp": "2026-03-09T00:37:26.514412"
+    },
+    {
+      "test": "Cloudflare 绕过测试",
+      "passed": true,
+      "message": "成功绕过 Cloudflare\n获取到 31536 字符",
+      "timestamp": "2026-03-09T00:37:27.643742"
+    }
+  ]
+}
