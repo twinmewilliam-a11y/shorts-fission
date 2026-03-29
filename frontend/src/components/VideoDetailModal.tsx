@@ -96,21 +96,15 @@ export function VideoDetailModal({ videoId, onClose, onRetry, onStatusChange }: 
     setPreviewUrl(`${API_BASE_URL}/api/downloads/variant/${variantId}`)
   }
 
-  const handleDownloadVariant = async (variantId: number) => {
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/downloads/variant/${variantId}`)
-      if (res.ok) {
-        const blob = await res.blob()
-        const url = window.URL.createObjectURL(blob)
-        const a = document.createElement('a')
-        a.href = url
-        a.download = `variant_${variantId}.mp4`
-        a.click()
-        window.URL.revokeObjectURL(url)
-      }
-    } catch (error) {
-      console.error('下载变体失败:', error)
-    }
+  const handleDownloadVariant = (variantId: number) => {
+    // 直接下载，避免 Fetch API 跨域问题
+    const downloadUrl = `${API_BASE_URL}/api/downloads/variant/${variantId}`
+    const a = document.createElement('a')
+    a.href = downloadUrl
+    a.download = `variant_${variantId}.mp4`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
   }
 
   const handleRetry = async () => {
@@ -406,16 +400,76 @@ export function VideoDetailModal({ videoId, onClose, onRetry, onStatusChange }: 
                   </div>
                 )}
 
-                {/* 处理中状态提示 */}
+                {/* 处理中状态提示 - 优化版：显示预估时间和完成度百分比 */}
                 {video?.status === 'processing' && (
-                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                    <div className="flex items-center gap-2 text-yellow-700">
-                      <div className="animate-spin rounded-full h-4 w-4 border-2 border-yellow-600 border-t-transparent"></div>
-                      <span className="font-medium">正在生成变体...</span>
+                  <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border border-yellow-200 rounded-lg p-4 space-y-3">
+                    {/* 标题行 */}
+                    <div className="flex items-center gap-2">
+                      <div className="animate-spin rounded-full h-5 w-5 border-2 border-yellow-600 border-t-transparent"></div>
+                      <span className="font-medium text-yellow-800">正在生成变体...</span>
                     </div>
-                    <p className="text-sm text-yellow-600 mt-2">
-                      已完成 {video.variant_count} / {video.target_variant_count} 个变体
-                    </p>
+                    
+                    {/* 进度条 */}
+                    <div className="space-y-1">
+                      <div className="flex justify-between text-xs text-gray-600">
+                        <span>完成度</span>
+                        <span className="font-bold text-yellow-700">{video.variant_progress}%</span>
+                      </div>
+                      <div className="w-full bg-yellow-100 rounded-full h-3">
+                        <div
+                          className="bg-gradient-to-r from-yellow-400 to-amber-400 h-3 rounded-full transition-all duration-500 relative overflow-hidden"
+                          style={{ width: `${video.variant_progress}%` }}
+                        >
+                          {/* 动画效果 */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-pulse"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* 详细信息 */}
+                    <div className="grid grid-cols-2 gap-2 text-sm">
+                      <div className="bg-white/50 rounded p-2">
+                        <div className="text-gray-500 text-xs">已完成</div>
+                        <div className="font-bold text-yellow-700">{video.variant_count} 个</div>
+                      </div>
+                      <div className="bg-white/50 rounded p-2">
+                        <div className="text-gray-500 text-xs">剩余</div>
+                        <div className="font-bold text-amber-700">{video.target_variant_count - video.variant_count} 个</div>
+                      </div>
+                    </div>
+                    
+                    {/* 预估剩余时间 */}
+                    <div className="bg-white/70 rounded p-3 flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg">⏱️</span>
+                        <span className="text-gray-600 text-sm">预估剩余时间</span>
+                      </div>
+                      <span className="font-bold text-amber-700">
+                        {(() => {
+                          const remainingVariants = video.target_variant_count - video.variant_count
+                          const avgTimePerVariant = 45 // 秒/变体
+                          const remainingSeconds = remainingVariants * avgTimePerVariant
+                          
+                          if (remainingSeconds < 60) {
+                            return `约 ${remainingSeconds} 秒`
+                          } else if (remainingSeconds < 3600) {
+                            return `约 ${Math.ceil(remainingSeconds / 60)} 分钟`
+                          } else {
+                            const hours = Math.floor(remainingSeconds / 3600)
+                            const mins = Math.ceil((remainingSeconds % 3600) / 60)
+                            return `约 ${hours} 小时 ${mins} 分钟`
+                          }
+                        })()}
+                      </span>
+                    </div>
+                    
+                    {/* 进度阶段提示 */}
+                    <div className="text-xs text-gray-500 text-center">
+                      {video.variant_progress < 30 && "📝 正在提取字幕和生成动画..."}
+                      {video.variant_progress >= 30 && video.variant_progress < 70 && "🎬 正在生成视频变体..."}
+                      {video.variant_progress >= 70 && video.variant_progress < 95 && "✨ 即将完成，请稍候..."}
+                      {video.variant_progress >= 95 && "🎉 正在最后处理..."}
+                    </div>
                   </div>
                 )}
 

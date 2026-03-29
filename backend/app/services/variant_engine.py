@@ -124,9 +124,9 @@ class PIPVariantEngineV4:
         """
         return {
             # 必做特效
-            'bg_blur': random.uniform(40, 60),          # 全景模糊 σ=40-60
+            'bg_blur': random.uniform(30, 50),          # 全景模糊 σ=30-50（调整后）
             'bg_brightness': 0,                          # 无暗化
-            'bg_scale': random.uniform(1.3, 1.6),       # 放大 130-160%
+            'bg_scale': random.uniform(1.1, 1.4),       # 放大 110-140%（调整后）
             'speed': random.uniform(1.05, 1.2),         # 变速 1.05-1.2x
             'mirror': random.random() > 0.5,            # 50% 镜像
             'crop_ratio': random.uniform(0.03, 0.05),   # 裁剪 3-5%
@@ -185,7 +185,7 @@ class PIPVariantEngineV4:
         if params['mirror']:
             bg_filters.append("hflip")
         
-        # 2. 放大 150-200%
+        # 2. 放大 110-140%
         bg_filters.append(f"scale=iw*{params['bg_scale']:.2f}:ih*{params['bg_scale']:.2f}")
         
         # 3. 全景模糊 σ=40-60
@@ -194,17 +194,18 @@ class PIPVariantEngineV4:
         # 3.5 背景层暗化 -0.3~-0.1（随机）
         bg_filters.append(f"eq=brightness={params['bg_brightness']:.2f}")
         
-        # 4. 旋转 ±10°
-        rotation_rad = params.get('rotation', params.get('fg_rotation', 0)) * 3.14159 / 180
-        bg_filters.append(f"rotate={rotation_rad:.4f}:c=black:fillcolor=black")
-        
-        # 5. 裁剪 5-10%
-        crop_ratio = params.get('crop_ratio', 0.08)
-        bg_filters.append(f"crop=iw*(1-{crop_ratio*2:.2f}):ih*(1-{crop_ratio*2:.2f}):iw*{crop_ratio:.2f}:ih*{crop_ratio:.2f}")
-        
-        # 6. 同步变速
+        # 4. 同步变速（移到 rotate 之前）
         speed = params.get('speed', 1.1)
         bg_filters.append(f"setpts={1/speed:.3f}*PTS")
+        
+        # 5. 旋转 ±10°（移到 setpts 之后，避免帧冻结）
+        rotation_rad = params.get('rotation', params.get('fg_rotation', 0)) * 3.14159 / 180
+        if abs(rotation_rad) > 0.01:  # 只在旋转角度 > 0.5° 时应用
+            bg_filters.append(f"rotate={rotation_rad:.4f}:c=black:fillcolor=black")
+        
+        # 6. 裁剪 5-10%
+        crop_ratio = params.get('crop_ratio', 0.08)
+        bg_filters.append(f"crop=iw*(1-{crop_ratio*2:.2f}):ih*(1-{crop_ratio*2:.2f}):iw*{crop_ratio:.2f}:ih*{crop_ratio:.2f}")
         
         # 7. 增强效果
         for effect in params.get('enhance_effects', []):

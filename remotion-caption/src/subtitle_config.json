@@ -1,7 +1,7 @@
 {
   "config": {
-    "template": "explosive",
-    "position": "center",
+    "template": "fast",
+    "position": "bottom_center",
     "fontSize": 56,
     "videoWidth": 1080,
     "videoHeight": 1920
@@ -18,6 +18,51 @@
           },
           {
             "id": 1,
+            "tags": []
+          },
+          {
+            "id": 2,
+            "tags": []
+          },
+          {
+            "id": 3,
+            "tags": []
+          },
+          {
+            "id": 4,
+            "tags": []
+          },
+          {
+            "id": 5,
+            "tags": []
+          },
+          {
+            "id": 6,
+            "tags": [
+              "last-line-in-segment"
+            ]
+          }
+        ],
+        "tags": []
+      },
+      {
+        "lines": [
+          {
+            "id": 7,
+            "tags": [
+              "first-line-in-segment"
+            ]
+          },
+          {
+            "id": 8,
+            "tags": []
+          },
+          {
+            "id": 9,
+            "tags": []
+          },
+          {
+            "id": 10,
             "tags": [
               "last-line-in-segment"
             ]
@@ -30,46 +75,46 @@
   "lines": [
     {
       "id": 0,
-      "text": "Well, started it on",
-      "start": 0.091,
-      "end": 1.313,
+      "text": "Комене в шесть утра",
+      "start": 0.752,
+      "end": 4.294,
       "words": [
         {
-          "text": "Well,",
-          "start": 0.091,
-          "end": 0.472,
+          "text": "Комене",
+          "start": 0.752,
+          "end": 1.792,
           "confidence": 1.0,
           "tags": [
-            "first-word-in-line",
-            "word"
+            "word",
+            "first-word-in-line"
           ]
         },
         {
-          "text": "started",
-          "start": 0.652,
-          "end": 0.952,
-          "confidence": 1.0,
-          "tags": [
-            "word"
-          ]
-        },
-        {
-          "text": "it",
-          "start": 1.092,
-          "end": 1.173,
+          "text": "в",
+          "start": 1.812,
+          "end": 1.833,
           "confidence": 1.0,
           "tags": [
             "word"
           ]
         },
         {
-          "text": "on",
-          "start": 1.253,
-          "end": 1.313,
+          "text": "шесть",
+          "start": 1.913,
+          "end": 2.513,
           "confidence": 1.0,
           "tags": [
-            "last-word-in-line",
             "word"
+          ]
+        },
+        {
+          "text": "утра",
+          "start": 2.673,
+          "end": 4.294,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
           ]
         }
       ],
@@ -78,35 +123,256 @@
       ],
       "position": {
         "x": 235,
-        "y": 930,
+        "y": 1780,
         "width": 610,
         "height": 60
       }
     },
     {
       "id": 1,
-      "text": "the base.",
-      "start": 1.333,
-      "end": 1.894,
+      "text": "фотография твоя. Раз",
+      "start": 4.354,
+      "end": 9.076,
       "words": [
         {
-          "text": "the",
-          "start": 1.333,
-          "end": 1.433,
+          "text": "фотография",
+          "start": 4.354,
+          "end": 5.874,
           "confidence": 1.0,
           "tags": [
-            "first-word-in-line",
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "твоя.",
+          "start": 6.154,
+          "end": 8.335,
+          "confidence": 1.0,
+          "tags": [
             "word"
           ]
         },
         {
-          "text": "base.",
-          "start": 1.513,
-          "end": 1.894,
+          "text": "Раз",
+          "start": 8.615,
+          "end": 9.076,
           "confidence": 1.0,
           "tags": [
-            "last-word-in-line",
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 220,
+        "y": 1780,
+        "width": 640,
+        "height": 60
+      }
+    },
+    {
+      "id": 2,
+      "text": "вас поминания о",
+      "start": 9.096,
+      "end": 13.157,
+      "words": [
+        {
+          "text": "вас",
+          "start": 9.096,
+          "end": 9.536,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "поминания",
+          "start": 9.576,
+          "end": 12.897,
+          "confidence": 1.0,
+          "tags": [
             "word"
+          ]
+        },
+        {
+          "text": "о",
+          "start": 12.977,
+          "end": 13.157,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 295,
+        "y": 1780,
+        "width": 490,
+        "height": 60
+      }
+    },
+    {
+      "id": 3,
+      "text": "тебе. У комена шесть",
+      "start": 13.337,
+      "end": 17.759,
+      "words": [
+        {
+          "text": "тебе.",
+          "start": 13.337,
+          "end": 15.719,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "У",
+          "start": 15.799,
+          "end": 15.899,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "комена",
+          "start": 15.979,
+          "end": 17.099,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "шесть",
+          "start": 17.199,
+          "end": 17.759,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 220,
+        "y": 1780,
+        "width": 640,
+        "height": 60
+      }
+    },
+    {
+      "id": 4,
+      "text": "утра разбитая душа.",
+      "start": 17.799,
+      "end": 23.702,
+      "words": [
+        {
+          "text": "утра",
+          "start": 17.799,
+          "end": 19.84,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "разбитая",
+          "start": 19.86,
+          "end": 21.401,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "душа.",
+          "start": 21.481,
+          "end": 23.702,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 235,
+        "y": 1780,
+        "width": 610,
+        "height": 60
+      }
+    },
+    {
+      "id": 5,
+      "text": "Все твои обещания",
+      "start": 23.722,
+      "end": 28.184,
+      "words": [
+        {
+          "text": "Все",
+          "start": 23.722,
+          "end": 24.202,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "твои",
+          "start": 24.262,
+          "end": 24.762,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "обещания",
+          "start": 25.243,
+          "end": 28.184,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 265,
+        "y": 1780,
+        "width": 550,
+        "height": 60
+      }
+    },
+    {
+      "id": 6,
+      "text": "устают.",
+      "start": 28.264,
+      "end": 29.144,
+      "words": [
+        {
+          "text": "устают.",
+          "start": 28.264,
+          "end": 29.144,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "single-word-line",
+            "last-word-in-line",
+            "first-word-in-line"
           ]
         }
       ],
@@ -114,70 +380,514 @@
         "last-line-in-segment"
       ],
       "position": {
-        "x": 385,
-        "y": 930,
-        "width": 310,
+        "x": 415,
+        "y": 1780,
+        "width": 250,
+        "height": 60
+      }
+    },
+    {
+      "id": 7,
+      "text": "Кому не в шестю там",
+      "start": 31.195,
+      "end": 34.259,
+      "words": [
+        {
+          "text": "Кому",
+          "start": 31.195,
+          "end": 31.636,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "не",
+          "start": 31.976,
+          "end": 32.216,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "в",
+          "start": 32.256,
+          "end": 32.297,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "шестю",
+          "start": 32.337,
+          "end": 33.258,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "там",
+          "start": 33.298,
+          "end": 34.259,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "first-line-in-segment"
+      ],
+      "position": {
+        "x": 235,
+        "y": 1780,
+        "width": 610,
+        "height": 60
+      }
+    },
+    {
+      "id": 8,
+      "text": "фотографии от",
+      "start": 34.299,
+      "end": 34.98,
+      "words": [
+        {
+          "text": "фотографии",
+          "start": 34.299,
+          "end": 34.84,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "от",
+          "start": 34.88,
+          "end": 34.98,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 325,
+        "y": 1780,
+        "width": 430,
+        "height": 60
+      }
+    },
+    {
+      "id": 9,
+      "text": "твоего, а рад вас",
+      "start": 35.0,
+      "end": 36.682,
+      "words": [
+        {
+          "text": "твоего,",
+          "start": 35.0,
+          "end": 35.26,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "first-word-in-line"
+          ]
+        },
+        {
+          "text": "а",
+          "start": 35.32,
+          "end": 35.381,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "рад",
+          "start": 35.401,
+          "end": 35.741,
+          "confidence": 1.0,
+          "tags": [
+            "word"
+          ]
+        },
+        {
+          "text": "вас",
+          "start": 35.781,
+          "end": 36.682,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "last-word-in-line"
+          ]
+        }
+      ],
+      "tags": [],
+      "position": {
+        "x": 265,
+        "y": 1780,
+        "width": 550,
+        "height": 60
+      }
+    },
+    {
+      "id": 10,
+      "text": "поменять",
+      "start": 36.722,
+      "end": 39.446,
+      "words": [
+        {
+          "text": "поменять",
+          "start": 36.722,
+          "end": 39.446,
+          "confidence": 1.0,
+          "tags": [
+            "word",
+            "single-word-line",
+            "last-word-in-line",
+            "first-word-in-line"
+          ]
+        }
+      ],
+      "tags": [
+        "last-line-in-segment"
+      ],
+      "position": {
+        "x": 400,
+        "y": 1780,
+        "width": 280,
         "height": 60
       }
     }
   ],
   "words": [
     {
-      "text": "Well,",
-      "start": 0.091,
-      "end": 0.472,
+      "text": "Комене",
+      "start": 0.752,
+      "end": 1.792,
       "confidence": 1.0,
       "tags": [
-        "first-word-in-line",
-        "word"
+        "word",
+        "first-word-in-line"
       ]
     },
     {
-      "text": "started",
-      "start": 0.652,
-      "end": 0.952,
-      "confidence": 1.0,
-      "tags": [
-        "word"
-      ]
-    },
-    {
-      "text": "it",
-      "start": 1.092,
-      "end": 1.173,
+      "text": "в",
+      "start": 1.812,
+      "end": 1.833,
       "confidence": 1.0,
       "tags": [
         "word"
       ]
     },
     {
-      "text": "on",
-      "start": 1.253,
-      "end": 1.313,
+      "text": "шесть",
+      "start": 1.913,
+      "end": 2.513,
       "confidence": 1.0,
       "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "утра",
+      "start": 2.673,
+      "end": 4.294,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "фотография",
+      "start": 4.354,
+      "end": 5.874,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "твоя.",
+      "start": 6.154,
+      "end": 8.335,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "Раз",
+      "start": 8.615,
+      "end": 9.076,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "вас",
+      "start": 9.096,
+      "end": 9.536,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "поминания",
+      "start": 9.576,
+      "end": 12.897,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "о",
+      "start": 12.977,
+      "end": 13.157,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "тебе.",
+      "start": 13.337,
+      "end": 15.719,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "У",
+      "start": 15.799,
+      "end": 15.899,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "комена",
+      "start": 15.979,
+      "end": 17.099,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "шесть",
+      "start": 17.199,
+      "end": 17.759,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "утра",
+      "start": 17.799,
+      "end": 19.84,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "разбитая",
+      "start": 19.86,
+      "end": 21.401,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "душа.",
+      "start": 21.481,
+      "end": 23.702,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "Все",
+      "start": 23.722,
+      "end": 24.202,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "твои",
+      "start": 24.262,
+      "end": 24.762,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "обещания",
+      "start": 25.243,
+      "end": 28.184,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "устают.",
+      "start": 28.264,
+      "end": 29.144,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "single-word-line",
         "last-word-in-line",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "Кому",
+      "start": 31.195,
+      "end": 31.636,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "не",
+      "start": 31.976,
+      "end": 32.216,
+      "confidence": 1.0,
+      "tags": [
         "word"
       ]
     },
     {
-      "text": "the",
-      "start": 1.333,
-      "end": 1.433,
+      "text": "в",
+      "start": 32.256,
+      "end": 32.297,
       "confidence": 1.0,
       "tags": [
-        "first-word-in-line",
         "word"
       ]
     },
     {
-      "text": "base.",
-      "start": 1.513,
-      "end": 1.894,
+      "text": "шестю",
+      "start": 32.337,
+      "end": 33.258,
       "confidence": 1.0,
       "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "там",
+      "start": 33.298,
+      "end": 34.259,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "фотографии",
+      "start": 34.299,
+      "end": 34.84,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "от",
+      "start": 34.88,
+      "end": 34.98,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "твоего,",
+      "start": 35.0,
+      "end": 35.26,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "first-word-in-line"
+      ]
+    },
+    {
+      "text": "а",
+      "start": 35.32,
+      "end": 35.381,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "рад",
+      "start": 35.401,
+      "end": 35.741,
+      "confidence": 1.0,
+      "tags": [
+        "word"
+      ]
+    },
+    {
+      "text": "вас",
+      "start": 35.781,
+      "end": 36.682,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "last-word-in-line"
+      ]
+    },
+    {
+      "text": "поменять",
+      "start": 36.722,
+      "end": 39.446,
+      "confidence": 1.0,
+      "tags": [
+        "word",
+        "single-word-line",
         "last-word-in-line",
-        "word"
+        "first-word-in-line"
       ]
     }
   ]

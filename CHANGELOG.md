@@ -1,5 +1,89 @@
 # Changelog
 
+## [v4.1.3] - 2026-03-30
+
+### 🎨 UI/UX Dark Theme
+- OLED dark mode with video editor pink/dark palette
+- Primary: #EC4899 (video pink)
+- Accent: #2563EB (timeline blue)
+- Background: #0F172A (deep dark)
+- Font: Plus Jakarta Sans
+- Icons: Lucide React (SVG)
+
+### ✨ New Features
+- **Video Numbering**: Display database ID on video cards (#022, #023...)
+- **Batch Operations**: 
+  - Batch selection mode
+  - Batch download (individual ZIPs per video)
+  - Batch delete (with confirmation dialog)
+- **Cache Cleanup System**:
+  - Auto cleanup hook after variant generation
+  - Daily scheduled cleanup script
+  - Size-based cleanup (>500MB)
+
+### 🐛 Bug Fixes
+- **Cross-origin Download Issue**: Fixed `net::ERR_FAILED 200 (OK)` error
+  - Changed from `fetch` API to `<a>` tag download
+  - Added 2-second delay for batch downloads
+- **FileResponse Import**: Missing import caused 500 error
+
+### 📝 Documentation
+- Added `docs/CHANGELOG-v4.1.2-to-current.md`
+- Added `docs/UI-UX-OPTIMIZATION.md`
+- Added `docs/CACHE-CLEANUP.md`
+
+---
+
+## [v4.1.2] - 2026-03-26
+
+### ⚡ 性能优化
+
+#### 方案 1: Remotion 并发渲染
+- 添加 `--concurrency 4` 参数
+- Remotion 同时渲染 4 帧（根据 CPU 核心数）
+- 预期渲染速度提升 2-4 倍
+
+#### 方案 2: FFmpeg 多线程优化
+- 添加 `-threads 4` 参数到 overlay 命令
+- FFmpeg 使用多线程处理视频合成
+- 预期 overlay 速度提升 1.5-2 倍
+
+#### WhisperX 模型预热
+- Worker 启动时预先加载 WhisperX 模型
+- 首次请求无需等待模型加载
+- 预热耗时 ~12 秒
+
+#### 方案 A: ThreadPoolExecutor 并行生成
+- 使用 `ThreadPoolExecutor` 并行生成变体
+- 最多 4 个并行线程
+- 预期生成速度提升 2-4 倍
+
+### 📁 修改文件
+- `backend/app/tasks/celery_tasks.py` - 并行生成逻辑
+- `backend/app/services/model_warmup.py` - 模型预热模块
+- `backend/app/services/subtitle_extractor.py` - 使用缓存模型
+
+---
+
+## [v4.1.1] - 2026-03-26
+
+### ⚡ 性能优化
+
+#### 方案 1: Remotion 并发渲染
+- 添加 `--concurrency 4` 参数
+- Remotion 同时渲染 4 帧（根据 CPU 核心数）
+- 预期渲染速度提升 2-4 倍
+
+#### 方案 2: FFmpeg 多线程优化
+- 添加 `-threads 4` 参数到 overlay 命令
+- FFmpeg 使用多线程处理视频合成
+- 预期 overlay 速度提升 1.5-2 倍
+
+### 📁 修改文件
+- `backend/app/tasks/celery_tasks.py` - 第 118-135 行（Remotion）、第 625 行（FFmpeg）
+
+---
+
 ## [v4.1.0] - 2026-03-23
 
 ### 🎉 词级动画字幕系统 (Word-Level Animated Captions)

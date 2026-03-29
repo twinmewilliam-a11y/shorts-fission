@@ -6,7 +6,7 @@ from functools import lru_cache
 class Settings(BaseSettings):
     # App
     APP_NAME: str = "Shorts Fission"
-    APP_VERSION: str = "1.0.0"
+    APP_VERSION: str = "4.1.3"
     DEBUG: bool = True
     
     # Database - 使用绝对路径避免路径问题
